@@ -1,0 +1,1 @@
+a:3:{s:4:"time";i:1700010693;s:3:"ttl";i:14400;s:4:"data";O:32:"Tatter\Schemas\Structures\Schema":1:{s:6:"tables";O:35:"Tatter\Schemas\Structures\Mergeable":9:{s:10:"classrooms";b:1;s:7:"lessons";b:1;s:9:"schedules";b:1;s:8:"students";b:1;s:8:"subjects";b:1;s:18:"teacher_classrooms";b:1;s:16:"teacher_subjects";b:1;s:8:"teachers";b:1;s:5:"users";b:1;}}}

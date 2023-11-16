@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --text-secondary-color: #636c72;
+    --border-color: rgba(4, 32, 69, .14);
+    --header-color: #f1f1f1;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.authentication {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+}
+
+.nav-item .nav-link {
+    border-radius: 8px !important;
+}
+
+i.brand-image {
+    margin-right: 0.7rem !important;
+}
+
+.btn-group-sm > .btn, .btn-sm {
+    border-radius: 8px !important;
+    padding: 0.4rem 0.8rem !important;
+}
+
+label[wajib]::after {
+    content: "*";
+    color: red;
+    margin-left: 3px;
+}
+
+.dropdown-toggle-split.btn-action {
+    border-radius: 8px !important;
+    color: #fff !important;
+    height: auto;
+    width: auto;
+    padding: 0.4rem 0.8rem !important;
+    height: 35px;
+    width: 35px;
+    font-size: 12px;
+}
+
+.profile-photo {
+	height: 40px !important;
+	width: 40px !important;
+	border-radius: 50%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.profile-photo.lg {
+    width: 120px !important;
+    height: 120px !important;
+}
+
+.small-box {
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.small-box:hover {
+    color: #000;
+}
+
+.small-box a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* ========================================================================
+ * CARD BOOTSTRAP CUSTOM
+ * ======================================================================== */
+
+.card {
+    background-color: #f1f2f6;
+    border-radius: 10px;
+    box-shadow: none;
+    border: 1px solid var(--border-color);
+}
+
+.card.section-bg {
+    background-color: #fefeff;
+    border-radius: 12px;
+}
+
+.card:not(:has(.card-footer)).notif {
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.15);
+}
+
+.card:has(.card-header):has(.card-body):has(.card-footer) .card-header {
+    border-radius: 10px 10px 0 0;
+}
+
+.card:not(:has(.card-footer)) .card-header {
+    border-radius: 10px 10px 0 0;
+}
+
+.card:not(:has(.card-body)) .card-header {
+    border-bottom: none;
+    border-radius: 10px;
+}
+
+.card:not(:has(.card-body)) .card-footer {
+    border-top: none;
+    border-radius: 10px;
+}
+
+.card:not(:has(.card-footer)) .card-body {
+    border-radius: 0 0 10px 10px;
+}
+
+.card:not(:has(.card-header)) .card-body {
+    border-radius: 10px 10px 0 0;
+}
+
+.card:not(:has(.card-header)):not(:has(.card-footer)) .card-body {
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.card:not(:has(.card-body)):not(:has(.card-footer)) .card-header {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.card:not(:has(.card-header)):not(:has(.card-body)) .card-footer {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.card:has(.card-header):has(.card-body) .card-footer,
+.card:not(:has(.card-header)):has(.card-body) .card-footer {
+    border-radius: 0 0 10px 10px;
+}
+
+.card-header {
+    background-color: var(--header-color);
+    border-bottom: 1px solid var(--border-color);
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.card-body {
+    background-color: #fff;
+}
+
+.card-footer {
+    background-color: var(--header-color);
+    border-top: 1px solid var(--border-color);
+}
+
+/* ========================================================================
+ * BUTTON BOOTSTRAP CUSTOM
+ * ======================================================================== */
+
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ========================================================================
+ * FORM BOOTSTRAP CUSTOM
+ * ======================================================================== */
+
+.form-control, .custom-select, .custom-file-label {
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.form-control::-webkit-input-placeholder,
+.form-group label {
+    font-size: 15px;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: var(--text-secondary-color);
+}
+
+.custom-file-label, .custom-file-label::after {
+    padding: 0.475rem 0.75rem;
+    font-weight: 400 !important;
+}
+
+.swal2-popup {
+    border-radius: 15px !important;
+}
+
+.swal2-popup:not(.swal2-toast) .swal2-title {
+    font-size: 22px !important;
+}
+
+.swal2-content {
+    font-size: 18px !important;
+}
+
+.swal2-styled {
+    border-radius: 8px !important;
+}
+
+.alert {
+    border-radius: 8px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+.user-info .user-name {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.user-info .user-name small {
+    font-size: 12px;
+    color: var(--text-secondary-color);
+}
+
+table th, table td {
+    vertical-align: middle !important;
+    white-space: nowrap;
+}
+
+table.not-wrap th, table.not-wrap td {
+    white-space: normal;
+}
+
+/* =======================================================================
+ *  DROPDOWN CUSTOM BOOTSTRAP 4
+ * ======================================================================= */
+
+[data-toggle="dropdown"] {
+    border-radius: 8px !important;
+}
+
+.dropdown-menu {
+    border-radius: 12px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11);
+    overflow: hidden;
+    border: 1px solid var(--border-color) !important;
+}
+
+.dropdown-item {
+    font-size: 15px;
+    color: var(--text-secondary-color);
+}
+
+.dropdown-item:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.dropdown-item:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.dropdown-header {
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 15px !important;
+}
+
+.dropdown-footer {
+    border-top: 1px solid var(--border-color);
+}
+
+.dropdown-footer,
+.dropdown-header {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #f1f1f1;
+}
+
+.dropdown-footer:hover,
+.dropdown-header:hover {
+    background-color: #f1f1f1;
+    color: var(--text-secondary-color);
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #f1f1f1;
+    color: var(--text-secondary-color) !important;
+}
+
+.dropdown-item i {
+    color: #007bff;
+}
+
+.dropdown-toggle::after,
+.dropleft .dropdown-toggle::before,
+.dropright .dropdown-toggle::after,
+.dropup .dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-toggle-split {
+    padding: 5px 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-toggle-split:hover,
+.dropdown-toggle-split[aria-expanded="true"] {
+    border-color: #007bff;
+}
+
+.dropdown-toggle-split[aria-expanded="true"] {
+    background-color: #007bff;
+}
+
+.dropdown-toggle-split[aria-expanded="true"] i {
+    color: #fff;
+}
+
+.dropdown-divider {
+    border-color: var(--border-color) !important;
+}
+
+.dropdown-item.disabled,
+.dropdown-item:disabled {
+    cursor: no-drop !important;
+    pointer-events: visible !important;
+}
+
+.dropdown-menu-md {
+    min-width: 240px;
+}
+
+/* ====================================================================================================
+# Modal Bootstrap
+*  ====================================================================================================*/
+
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11);
+}
+
+.modal-footer,
+.modal-header {
+    background-color: #f1f1f1;
+    border-color: var(--border-color);
+}
+
+.modal-footer {
+    border-radius: 0 0 10px 10px;
+}
+
+.modal-header {
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.modal-info {
+    line-height: 1;
+    margin-left: 8px;
+}
+
+.modal-footer > * {
+    margin-right: 0.1rem;
+    margin-left: 0.1rem;
+}
